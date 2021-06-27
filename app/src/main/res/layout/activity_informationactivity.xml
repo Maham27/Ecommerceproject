@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".informationactivity">
+
+
+    <ImageView
+        android:id="@+id/iminfo"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:srcCompat="@drawable/fs3" />
+    <TextView
+        android:id="@+id/tvnameinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="price:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvpriceinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="price:"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageButton
+            android:id="@+id/imminus"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/design"
+            app:srcCompat="@drawable/minus" />
+
+        <TextView
+            android:id="@+id/tvno"
+            android:layout_width="50dp"
+            android:layout_height="42dp"
+             android:textColor="@color/black"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="180dp"
+            android:text="1"
+            android:textSize="40sp" />
+
+        <ImageButton
+            android:id="@+id/imadd"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/design"
+            android:text="edit"
+            app:srcCompat="@drawable/add" />
+
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add to cart"
+        android:textStyle="bold"
+        android:background="@color/purple_200"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+    <Button
+        android:id="@+id/buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        android:textStyle="bold"
+        android:background="@color/purple_200"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        />
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+

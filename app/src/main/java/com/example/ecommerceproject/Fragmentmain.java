@@ -1,5 +1,6 @@
 package com.example.ecommerceproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -12,6 +13,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.denzcoskun.imageslider.ImageSlider;
@@ -37,6 +39,7 @@ public class Fragmentmain extends Fragment {
     RecyclerView precyler;
     productsadaptor padaptor;
     List<products> pnames;
+    TextView tvothers;
 
 
 
@@ -124,6 +127,15 @@ public class Fragmentmain extends Fragment {
         //pnames.add(new products("menshoes", "fs1", 250));
         padaptor=new productsadaptor(getContext(),pnames);
         precyler.setAdapter(padaptor);
+
+         tvothers=w.findViewById(R.id.tvothers);
+        tvothers.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent  intent=new Intent(getContext(),ourallproducts.class);
+                startActivity(intent);
+            }
+        });
 
          return w;
     }
